@@ -36,7 +36,7 @@ public class AnimeService {
 
     /*
     @Transactional(rollbackFor = Exception.class ) Essa linha considera a transação caso acha uma exceção e o dado nao possa ser gravado
-    o @Transactions da rollback na tranação, lembrando que o Exception nao entra nessa exceção por isso a rollbackFor
+    o @Transactions da rollback na transação, lembrando que o Exception nao entra nessa exceção por isso a rollbackFor
     */
     public Anime save(AnimePostRequestBody animePostRequestBody)  {
 //        return animeRepository.save(Anime.builder().name(animePostRequestBody.getName()).build()); linha como estava sem o Mapper
